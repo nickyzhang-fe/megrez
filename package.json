@@ -3,8 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "packages/**/*.{js,vue,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "packages/**/*.{css,scss,vue}": [
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -12,5 +24,18 @@
   "dependencies": {
     "typescript": "^4.9.5",
     "vue": "^3.2.36"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "commitlint": "^17.4.4",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
   }
 }

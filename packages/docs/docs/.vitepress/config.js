@@ -12,6 +12,7 @@ export default {
     },
 }
 function nav() {
+
     return [
         { text: "指南", link: "/guild/installation",  activeMatch: '/guide/' },
         { text: "组件", link: "/components/button", activeMatch: '/components/' },
