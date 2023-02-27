@@ -10,7 +10,7 @@
     }
   },
   "lint-staged": {
-    "packages/**/*.{js,vue,jsx,ts,tsx}": [
+    "packages/**/**/*.{js,vue,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix"
     ],

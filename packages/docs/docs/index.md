@@ -1,23 +1,23 @@
 ---
 layout: home
 
-title: Easyest
+title: Megrez
 titleTemplate: 一个Vue3组件库
 
 hero:
-  name: Easyest
+  name: Megrez
   text: 一个Vue3组件库
   tagline: 让你的组件库开发更简单
   image:
     /src: /logo.png
-    alt: Easyest
+    alt: Megrez
   actions:
     - theme: brand
       text: 开始
       link: /guide/installation
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/qddidi/easyest
+      link: https://github.com/nickyzhang-fe/megrez.git
 
 features:
   - icon: 💡
