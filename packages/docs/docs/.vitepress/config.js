@@ -8,7 +8,10 @@ export default {
   appearance: true, //可以选择深浅主题
   themeConfig: {
     nav: nav(),
-    sidebar: sidebar(),
+    sidebar: {
+      '/guide/': sidebarGuide(),
+      '/components/': sidebarComponents()
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/qddidi/easyest' },
     ],
@@ -21,7 +24,7 @@ export default {
 
 function nav() {
   return [
-    { text: '指南', link: '/guild/installation', activeMatch: '/guide/' },
+    { text: '指南', link: '/guide/installation', activeMatch: '/guide/' },
     { text: '组件', link: '/components/button', activeMatch: '/components/' },
     {
       text: '记录',
@@ -29,41 +32,41 @@ function nav() {
     },
   ]
 }
-function sidebar() {
-  return {
-    '/guild/': [
-      {
-        text: '基础',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            text: '安装',
-            link: '/guild/installation',
-          },
-          {
-            text: '快速开始',
-            link: '/guild/quickstart',
-          },
-        ],
-      },
-    ],
-    '/components': [
-      {
-        text: '基础组件',
-        collapsible: true,
-        collapsed: true,
-        items: [
-          {
-            text: 'Button',
-            link: '/components/button',
-          },
-          {
-            text: 'Card',
-            link: '/components/card',
-          },
-        ]
-      }
-    ]
-  }
+function sidebarGuide() {
+  return [
+    {
+      text: '基础',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          text: '安装',
+          link: '/guide/installation',
+        },
+        {
+          text: '快速开始',
+          link: '/guide/quickstart',
+        },
+      ],
+    },
+  ]
+}
+function sidebarComponents() {
+  return [
+    {
+      text: '基础组件',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          text: 'Button',
+          link: '/components/button',
+        },
+        {
+          text: 'Card',
+          link: '/components/card',
+        },
+      ]
+    }
+  ]
 }
