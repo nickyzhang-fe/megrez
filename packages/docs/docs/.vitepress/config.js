@@ -1,4 +1,5 @@
 export default {
+  base: 'megrez',
   title: 'Megrez',
   markdown: {
     lineNumbers: true, //md 加行号
