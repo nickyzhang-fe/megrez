@@ -4,7 +4,7 @@ export default {
     lineNumbers: true, //md 加行号
   },
   lastUpdated: true, //显示最近更新时间
-  siteTitle: 'vue-template',
+  siteTitle: 'Megrez',
   appearance: true, //可以选择深浅主题
   themeConfig: {
     nav: nav(),
@@ -13,7 +13,7 @@ export default {
       '/components/': sidebarComponents()
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/qddidi/easyest' },
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
     ],
     footer: {
       message: 'Released under the MIT License.',
