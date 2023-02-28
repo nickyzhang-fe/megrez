@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev:docs": "vitepress dev docs --open",
+    "build:docs": "vitepress build docs",
+    "serve:docs": "vitepress serve docs"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -36,6 +40,7 @@
     "eslint-plugin-vue": "^9.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "vitepress": "1.0.0-alpha.49"
   }
 }
