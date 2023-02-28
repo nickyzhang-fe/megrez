@@ -7,7 +7,7 @@ set -e
 pnpm run build:docs
 
 # 进入待发布的目录
-# cd docs/.vitepress/dist
+cd docs/.vitepress/dist
 
 git add -A
 git commit -m 'deploy'

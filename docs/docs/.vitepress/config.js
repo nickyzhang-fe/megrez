@@ -1,5 +1,5 @@
 export default {
-  base: 'megrez',
+  base: process.env.NODE_ENV === 'production' ? '/megrez/' : '/',
   title: 'Megrez',
   markdown: {
     lineNumbers: true, //md 加行号
