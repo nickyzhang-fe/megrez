@@ -1,0 +1,19 @@
+{
+  "name": "common/image",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "browser": {
+    "./sfc": "src/index.vue"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "cosFiles": [
+    "dist"
+  ]
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "dev:docs": "vitepress dev docs --open",
     "build:docs": "vitepress build docs",
-    "serve:docs": "vitepress serve docs"
+    "serve:docs": "vitepress serve docs",
+    "component:init": "node packages/build/sfc-init.ts"
   },
   "husky": {
     "hooks": {
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
+    "@types/node": "^18.14.4",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "commitlint": "^17.4.4",
@@ -41,6 +43,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
+    "readline-sync": "^1.4.10",
     "vitepress": "1.0.0-alpha.48"
   }
 }
