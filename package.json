@@ -27,8 +27,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@megrez/constants": "workspace:^1.0.0",
+    "@megrez/hooks": "workspace:^1.0.0",
+    "@megrez/utils": "workspace:^1.0.0",
     "@vueuse/core": "^10.7.1",
-    "typescript": "^4.9.5",
     "vue": "^3.2.36"
   },
   "devDependencies": {
@@ -45,6 +47,10 @@
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
     "readline-sync": "^1.4.10",
+    "typescript": "^4.9.5",
     "vitepress": "1.0.0-alpha.48"
+  },
+  "engines": {
+    "node": ">= 16"
   }
 }
