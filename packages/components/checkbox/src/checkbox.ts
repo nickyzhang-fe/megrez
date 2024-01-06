@@ -1,6 +1,8 @@
-import { componentSizes } from "../../../constant/size";
-
+import { UPDATE_MODEL_EVENT, componentSizes } from '@megrez/constants'
+import { isBoolean, isNumber, isString } from '@megrez/utils'
 import type { ExtractPropTypes } from 'vue'
+
+export type CheckboxValueType = string | number | boolean
 
 export const checkboxProps = {
   /**
@@ -89,4 +91,12 @@ export const checkboxProps = {
   },
 }
 
+export const checkboxEmits = {
+  [UPDATE_MODEL_EVENT]: (val: CheckboxValueType) =>
+    isString(val) || isNumber(val) || isBoolean(val),
+  change: (val: CheckboxValueType) =>
+    isString(val) || isNumber(val) || isBoolean(val),
+}
+
 export type CheckboxProps = ExtractPropTypes<typeof checkboxProps>
+export type CheckboxEmits = typeof checkboxEmits

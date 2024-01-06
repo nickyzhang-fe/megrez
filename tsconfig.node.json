@@ -7,12 +7,9 @@
     "skipLibCheck": true
   },
   "include": [
-    "internal/**/*",
-    "internal/**/*.json",
-    "scripts/**/*",
-    "packages/theme-chalk/*",
-    "packages/element-plus/version.ts",
-    "packages/element-plus/package.json"
+    "packages",
+    "typings/components.d.ts", 
+    "typings/env.d.ts"
   ],
   "exclude": [
     "**/__tests__/**", 

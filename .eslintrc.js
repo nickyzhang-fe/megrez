@@ -30,6 +30,7 @@ module.exports = {
     'no-console': 0, // 可以使用console
     'no-warning-comments': 0, // 允许注释里面有todo
     'vue/multi-word-component-names': 0, // 不限制组件名称
+    'vue/prefer-import-from-vue': 0,
     'consistent-return': 0, // 允许没有返回值
     'symbol-description': 0, // 允许使用symbol-description
     'require-atomic-updates': 0,

@@ -1,5 +1,8 @@
 # megrez
+
 北斗七星之天权星，又名文曲星
+
+访问地址：**[https://nickyzhang-fe.github.io/megrez/](https://nickyzhang-fe.github.io/megrez/)**
 
 ## 项目运行
 
@@ -8,6 +11,7 @@ git clone https://github.com/nickyzhang-fe/megrez.git
 
 pnpm install
 ```
+
 ## 文档编辑
 
 ```
@@ -27,5 +31,3 @@ pnpm run build:docs
 ```
 git subtree push --prefix docs/.vitepress/dist origin gh-pages
 ```
-
-**[链接](https://nickyzhang-fe.github.io/megrez/)**

@@ -1,11 +1,8 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall } from '@megrez/utils'
 
 import Checkbox from './src/checkbox.vue'
 
-export const ElCheckbox = withInstall(Checkbox, {
-  CheckboxButton,
-  CheckboxGroup,
-})
-export default ElCheckbox
+export const EmCheckbox = withInstall(Checkbox)
+export default EmCheckbox
 
 export * from './src/checkbox'
