@@ -7,3 +7,7 @@
 ```
 
 :::
+
+:::demo
+checkbox/base
+:::

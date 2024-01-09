@@ -1,11 +1,13 @@
+import { mdPlugin } from './config/plugins'
 export default {
   base: '/megrez/',
   title: 'Megrez',
   markdown: {
     lineNumbers: true, //md 加行号
+    config: (md) => mdPlugin(md),
   },
   lastUpdated: true, //显示最近更新时间
-  siteTitle: 'Megrez',
+  // siteTitle: 'Megrez',
   appearance: true, //可以选择深浅主题
   themeConfig: {
     nav: nav(),
