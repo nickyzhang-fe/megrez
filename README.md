@@ -18,6 +18,12 @@ pnpm install
 pnpm run dev:docs
 ```
 
+## 内部依赖安装
+
+```
+pnpm install @megrez/constants -w
+```
+
 ## 文档发布
 
 1. 文档构建
