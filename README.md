@@ -40,4 +40,5 @@ git subtree push --prefix docs/.vitepress/dist origin gh-pages
 
 ## 友情链接
 
-[VitePress 运行自己封装的组件](https://blog.csdn.net/cwin8951/article/details/130803402)
+1. [VitePress 运行自己封装的组件](https://blog.csdn.net/cwin8951/article/details/130803402)
+2. [项目示例](https://github.com/wocwin/t-ui-plus/blob/master/package.json)

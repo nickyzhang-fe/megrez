@@ -9,5 +9,5 @@
 :::
 
 :::demo
-checkbox/base
+EmCheckbox/base
 :::
