@@ -37,7 +37,7 @@
   
   <script lang="ts" setup>
   import { computed } from 'vue'
-  import { ElMessage } from 'element-plus'
+  import { ElMessage, ElDivider } from 'element-plus'
   import { useClipboard, useToggle } from '@vueuse/core'
   
   import Example from './vp-example.vue'

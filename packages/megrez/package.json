@@ -1,11 +1,8 @@
 {
   "name": "megrez",
   "version": "1.0.0",
-  "description": "A simple Discord bot that can help you with your daily tasks",
+  "description": "组件库导出",
   "main": "index.ts",
-  "scripts": {
-    "start": "node index.js"
-  },
   "author": "Mega",
   "license": "MIT"
 }
