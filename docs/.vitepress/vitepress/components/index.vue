@@ -37,11 +37,10 @@
   
   <script lang="ts" setup>
   import { computed } from 'vue'
-  import { ElMessage, ElDivider } from 'element-plus'
+  import { ElMessage } from 'element-plus'
   import { useClipboard, useToggle } from '@vueuse/core'
-  
-  import Example from './vp-example.vue'
-  import SourceCode from './vp-source-code.vue'
+  import Example from './example.vue'
+  import SourceCode from './sourceCode.vue'
   
   const props = defineProps<{
     rawSource: string // 源码
@@ -86,7 +85,6 @@
       align-items: center;
       justify-content: flex-end;
       height: 2.5rem;
-  
       .el-icon {
         &:hover {
           color: var(--text-color);

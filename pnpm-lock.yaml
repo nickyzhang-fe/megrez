@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@commitlint/config-conventional': ^17.4.4
+      '@element-plus/icons-vue': ^2.0.10
       '@megrez/components': workspace:^1.0.0
       '@megrez/constants': workspace:^1.0.0
       '@megrez/hooks': workspace:^1.0.0
@@ -50,6 +51,7 @@ importers:
       vue: 3.2.47
     devDependencies:
       '@commitlint/config-conventional': 17.4.4
+      '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.3.1_vue@3.2.47
       '@types/node': 18.14.4
       '@typescript-eslint/eslint-plugin': 5.53.0_cjo54hduev4bqhpjw5znwiokqu
       '@typescript-eslint/parser': 5.53.0_ycpbpc6yetojsgtrx3mwntkhsu
@@ -84,6 +86,9 @@ importers:
     specifiers: {}
 
   packages/hooks:
+    specifiers: {}
+
+  packages/megrez:
     specifiers: {}
 
   packages/utils:
@@ -269,14 +274,6 @@ packages:
   /@ctrl/tinycolor/3.6.1:
     resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /@element-plus/icons-vue/2.3.1_vue@3.2.47:
-    resolution: {integrity: sha512-XxVUZv48RZAd87ucGS48jPf6pKu0yV5UCg9f4FFwtrYxXOwWuVJo6wOvSLKEoMQKjv8GsX/mhP6UsC1lRwbUWg==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      vue: 3.2.47
     dev: true
 
   /@eslint/eslintrc/2.0.0:
@@ -999,7 +996,7 @@ packages:
       vue: ^3.2.0
     dependencies:
       '@ctrl/tinycolor': 3.6.1
-      '@element-plus/icons-vue': 2.3.1_vue@3.2.47
+      '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.3.1_vue@3.2.47
       '@floating-ui/dom': 1.5.4
       '@popperjs/core': registry.npmmirror.com/@sxzz/popperjs-es/2.11.7
       '@types/lodash': 4.14.202
@@ -3242,6 +3239,17 @@ packages:
       algoliasearch: registry.npmmirror.com/algoliasearch/4.14.3
     transitivePeerDependencies:
       - '@algolia/client-search'
+    dev: true
+
+  registry.npmmirror.com/@element-plus/icons-vue/2.3.1_vue@3.2.47:
+    resolution: {integrity: sha512-XxVUZv48RZAd87ucGS48jPf6pKu0yV5UCg9f4FFwtrYxXOwWuVJo6wOvSLKEoMQKjv8GsX/mhP6UsC1lRwbUWg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@element-plus/icons-vue/-/icons-vue-2.3.1.tgz}
+    id: registry.npmmirror.com/@element-plus/icons-vue/2.3.1
+    name: '@element-plus/icons-vue'
+    version: 2.3.1
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.47
     dev: true
 
   registry.npmmirror.com/@esbuild/android-arm/0.18.20:

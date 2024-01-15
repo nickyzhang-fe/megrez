@@ -1,5 +1,5 @@
 import 'normalize.css'
-import VPDemo from './components/vp-demo/index.vue'
+import Demo from './components/index.vue'
 import './style/css-vars.scss'
 import './style/index.scss'
-export { VPDemo }
+export { Demo }

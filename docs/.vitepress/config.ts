@@ -67,7 +67,7 @@ function sidebarComponents() {
         },
         {
           text: 'Card',
-          link: '/components/card',
+          link: '/components/EmCheckbox/base',
         },
       ]
     }
