@@ -3,6 +3,8 @@
   "tabWidth": 2,
   "singleQuote": true,
   "printWidth": 80,
+  "TrailingCooma": "all",
+  "bracketSpacing": true,
   "overrides": [
     {
       "files": ".prettierrc",
