@@ -35,7 +35,7 @@
     "@types/lodash-es": "^4.17.12",
     "@vue/shared": "^3.4.5",
     "@vueuse/core": "^10.7.1",
-    "vue": "^3.2.36"
+    "vue": "^3.3.10"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
@@ -63,6 +63,7 @@
     "readline-sync": "^1.4.10",
     "sass": "^1.69.7",
     "typescript": "^4.9.5",
+    "unplugin-vue-define-options": "^1.4.1",
     "vite": "^4.4.9",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vitepress": "1.0.0-alpha.48"

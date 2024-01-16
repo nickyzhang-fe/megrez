@@ -22,7 +22,8 @@
   // 创建一个跟踪自身 .value 变化的 ref，但不会使其值也变成响应式的。
   let dynamicComponent = shallowRef(null)
   onBeforeMount(() => {
-    // 匹配到的文件默认是懒加载的，通过动态导入实现，并会在构建时分离为独立的 chunk。如果你倾向于直接引入所有的模块（例如依赖于这些模块中的副作用首先被应用），你可以传入 { eager: true } 作为第二个参数：
+    // 匹配到的文件默认是懒加载的，通过动态导入实现，并会在构建时分离为独立的 chunk。
+    // 如果你倾向于直接引入所有的模块（例如依赖于这些模块中的副作用首先被应用），你可以传入 { eager: true } 作为第二个参数：
     const modules = import.meta.glob(`../../../examples/*/*.vue`, {
       eager: true,
     })
@@ -69,8 +70,7 @@
     }
   }
   .example-component {
-    // min-height: 86px;
-    // padding: 1.5rem;
+    padding: 1.5rem;
     &--spin {
       width: 36px;
       height: 36px;
