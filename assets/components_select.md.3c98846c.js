@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as s}from"./app.086912ec.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"components/select.md","lastUpdated":1704815092000}'),a={name:"components/select.md"};function o(c,n,r,p,d,_){return t(),s("div")}const i=e(a,[["render",o]]);export{m as __pageData,i as default};
