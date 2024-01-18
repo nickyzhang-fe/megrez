@@ -21,7 +21,13 @@ export default {
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-present 亦秋'
-    }
+    },
+    outlineTitle: '当前页',
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    lastUpdatedText: '上次更新时间'
   },
 }
 
