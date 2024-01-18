@@ -28,6 +28,7 @@ importers:
       eslint-plugin-vue: ^9.9.0
       husky: ^8.0.3
       lint-staged: ^13.1.2
+      lodash-es: ^4.17.21
       markdown-it: ^14.0.0
       markdown-it-container: ^4.0.0
       normalize.css: ^8.0.1
@@ -49,6 +50,7 @@ importers:
       '@types/lodash-es': 4.17.12
       '@vue/shared': 3.4.5
       '@vueuse/core': 10.7.1_vue@3.4.14
+      lodash-es: registry.npmmirror.com/lodash-es/4.17.21
       vue: registry.npmmirror.com/vue/3.4.14_typescript@4.9.5
     devDependencies:
       '@commitlint/config-conventional': 17.4.4
@@ -949,7 +951,7 @@ packages:
       dayjs: 1.11.10
       escape-html: 1.0.3
       lodash: 4.17.21
-      lodash-es: 4.17.21
+      lodash-es: registry.npmmirror.com/lodash-es/4.17.21
       lodash-unified: 1.0.3_vpgwo5v3ie2bia5ss74pgoa5ly
       memoize-one: 6.0.0
       normalize-wheel-es: 1.2.0
@@ -1625,10 +1627,6 @@ packages:
       p-locate: 5.0.0
     dev: true
 
-  /lodash-es/4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: true
-
   /lodash-unified/1.0.3_vpgwo5v3ie2bia5ss74pgoa5ly:
     resolution: {integrity: sha512-WK9qSozxXOD7ZJQlpSqOT+om2ZfcT4yO+03FuzAHD0wF6S0l0090LRPDx3vhTTLZ8cFKpBn+IOcVXK6qOcIlfQ==}
     peerDependencies:
@@ -1638,7 +1636,7 @@ packages:
     dependencies:
       '@types/lodash-es': 4.17.12
       lodash: 4.17.21
-      lodash-es: 4.17.21
+      lodash-es: registry.npmmirror.com/lodash-es/4.17.21
     dev: true
 
   /lodash.camelcase/4.3.0:
@@ -4201,6 +4199,11 @@ packages:
       mlly: registry.npmmirror.com/mlly/1.5.0
       pkg-types: registry.npmmirror.com/pkg-types/1.0.3
     dev: true
+
+  registry.npmmirror.com/lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
+    name: lodash-es
+    version: 4.17.21
 
   registry.npmmirror.com/lru-cache/5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lru-cache/-/lru-cache-5.1.1.tgz}

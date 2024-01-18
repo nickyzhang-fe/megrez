@@ -1,6 +1,7 @@
 <template>
   <label>
-    <input
+    <span>
+      <input
       :id="inputId"
       v-model="model"
       type="checkbox"
@@ -14,12 +15,20 @@
       @blur="isFocused = false"
       @click.stop
       />
+    </span>
+    <span>
+      <span v-if="hasOwnLabel">
+        <slot />
+        <template v-if="!$slots.default">{{ label }}</template>
+      </span>
+    </span>
   </label>
 </template>
 
 <script setup lang="ts">
 import { checkboxEmits, checkboxProps } from './checkbox';
 import { useCheckbox } from './composables'
+import { useSlots } from 'vue'
 
 defineOptions({
   name: 'EmCheckbox'
@@ -28,6 +37,7 @@ defineOptions({
 const props = defineProps(checkboxProps)
 defineEmits(checkboxEmits)
 console.log(props)
+const slots = useSlots()
 
 const {
   inputId,
@@ -35,8 +45,9 @@ const {
   isChecked,
   isDisabled,
   isFocused,
+  hasOwnLabel,
   handleChange
-} = useCheckbox(props)
+} = useCheckbox(props, slots)
 console.log(isChecked, isDisabled)
 </script>
 <style scoped lang="scss"></style>

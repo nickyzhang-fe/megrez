@@ -7,7 +7,7 @@ export default {
     config: (md) => mdPlugin(md),
   },
   lastUpdated: true, //显示最近更新时间
-  // siteTitle: 'Megrez',
+  siteTitle: 'Megrez',
   appearance: true, //可以选择深浅主题
   themeConfig: {
     nav: nav(),
@@ -28,7 +28,7 @@ export default {
 function nav() {
   return [
     { text: '指南', link: '/guide/installation', activeMatch: '/guide/' },
-    { text: '组件', link: '/components/button', activeMatch: '/components/' },
+    { text: '组件', link: '/components/checkbox', activeMatch: '/components/' },
     {
       text: '记录',
       link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md',
@@ -62,13 +62,28 @@ function sidebarComponents() {
       collapsed: true,
       items: [
         {
-          text: 'Button',
-          link: '/components/button',
+          text: 'Checkbox',
+          link: '/components/checkbox',
         },
         {
-          text: 'Card',
-          link: '/components/EmCheckbox/base',
+          text: 'Tree',
+          link: '/components/tree',
         },
+      ]
+    },
+    {
+      text: '基础组件',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          text: 'Checkbox',
+          link: '/components/checkbox',
+        },
+        {
+          text: 'Tree',
+          link: '/components/tree',
+        }
       ]
     }
   ]
